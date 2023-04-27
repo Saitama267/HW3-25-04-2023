@@ -1,0 +1,22 @@
+USE [HW_3]
+GO
+
+/****** Object:  Table [dbo].[Groups]    Script Date: 27.04.2023 17:15:28 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Groups](
+	[gr_id] [int] IDENTITY(1,1) NOT NULL,
+	[gr_name] [nvarchar](50) NULL,
+	[gr_temp] [float] NULL,
+ CONSTRAINT [PK_Groups] PRIMARY KEY CLUSTERED 
+(
+	[gr_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
